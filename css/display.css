@@ -1,0 +1,15 @@
+#inlinedemo span{
+    width: 200px;
+    height: 50px;
+    margin: 50px;
+    padding: 50px;
+    background-color: aqua;
+}
+#inlineblock span{
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+    margin: 50px;
+    padding: 50px;
+    background-color: rgb(8, 53, 53);
+}
