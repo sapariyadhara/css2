@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cantinor{
+    z-index: 999;
+    position: sticky;
+    top: 15px;
+    max-width: 1200px;
+    height: 100px;
+    border: 2px solid chocolate;
+    margin: 20px auto;
+    padding: 12px 20px;
+    background-color: beige;
+}
+.logo{
+    
+    float: left;
+    border: 2px solid black;
+}
+nav{
+    float: right;
+    border: 2px solid black;   
+}
+.clearfix::after{
+    display: block;
+    clear: both;
+    content: '';
+}
+.logo img{
+    width: 120px;
+    height: 70px;
+}
+nav ul {
+   
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    margin:20px;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+@media screen and (max-width:616px) {
+    .logo , nav {
+        width: 100%;
+        text-align: center;
+    }
+    .nav ul{
+        text-align: center;
+    }
+}
+.containor{
+    width: 85%;
+    height: auto;
+    border: 2px solid chocolate;
+    margin: 0 auto;
+    
+}
+.product{
+    width: 22%;
+    height: 250px;
+   
+    margin: 5px;
+    float: left;
+    min-width: 220px; 
+    max-width: 300px; 
+    border-radius: 15px;
+}
+.imgdata{
+    width: 100%;
+    height: 80%;
+   position: relative;
+}
+.imgdata i{
+    z-index: 999;
+    position: absolute;
+    color: rgb(202, 216, 228);
+    bottom: 15px;
+    right: 15px;
+}
+.imgdata img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+.data{
+    position: relative;
+    width: 100%;
+    height: 20%;
+    margin: 5px;
+    text-align: center;
+    font-family: sans-serif;
+    font-size: large;
+    font-style: italic;
+}
+
+button{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+/* .box{
+    clear: both;
+} */
+.clearfix::after{
+    clear: both;
+    content: '';
+    display: block;
+}
