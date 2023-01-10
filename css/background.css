@@ -1,0 +1,60 @@
+body{
+    background-image: url(../img/pixel1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: antiquewhite;
+    margin: 10px;
+    float: left;
+    
+}
+.box1{
+    background-image: url(../img/pexels2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.box2{
+    background-image: url(../img/pexels3.jpg);
+    background-size: cover;
+    background-position: bottom center;
+}
+.box3{
+    background-image: url(../img/pexels4.jpg);
+    background-size: cover;
+    background-position: top right;
+}
+.box4{
+    background-image: url(../img/pexels5.jpg);
+    background-size: cover;
+    background-position: right top;
+}
+.box5{
+    float: left;
+    width: 500px;
+    height: 400px;
+    background-image: url(../img/7img.png);
+    background-size: contain;
+    background-color: white;
+    background-repeat: no-repeat;
+}
+p{
+    color: white;
+    clear: both;
+
+}
+.box6{
+    float: left;
+    width: 100vw;
+    height: 50vh;
+    background-image: url(../img/img6.jpg);
+    background-size: cover;
+    overflow: auto;
+    background-attachment: local;
+    
+}

@@ -78,7 +78,6 @@ nav ul li a {
    position: relative;
 }
 .imgdata i{
-    z-index: 999;
     position: absolute;
     color: rgb(202, 216, 228);
     bottom: 15px;
