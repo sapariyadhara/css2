@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
-
+@font-face {
+    font-family: caviardreams;
+    src: url(../caviardreams_regular_macroman/CaviarDreams-webfont.ttf);
+   
+}
 
 
 *{
@@ -9,10 +13,11 @@
 }
 .containor{
     padding: 10px 60px;
-    width: 70%;
-    height: 550px;
+    width: 75%;
+    height: 92vh;
     background-color:#f3e1e2;
     margin: 20px auto;
+   
 }
 .box{
     height: 100%;
@@ -20,9 +25,11 @@
     background-color: white;
     border-radius: 20px 25px 25px 20px;
     box-shadow: 2px  2px 10px  gray;
+    position: relative;
+    overflow: hidden;
 }
-form{
-   font-family:  'Roboto', sans-serif;
+.form{
+   font-family:  caviardreams;
     float: left;
     width: 50%;
     height: 100%;
@@ -30,48 +37,54 @@ form{
     /* border: 2px solid chartreuse; */
     
 }
-input{
-    padding: 10px;
+form{
+    text-align: center;
+}
+ input{
+    padding: 20px;
     background-color: rgb(244, 232, 232);
     color: grey;
     border: none;
+    font-size: 20px;
 }
 h1{
+    font-family: caviardreams;
     text-align: center;
-    margin: 20px;
-    font-size: 40px;
+    margin: 30px;
+    font-size: 50px;
     color: #b43957;
 }
 p{
+    font-family: caviardreams;
     text-align: center;
-    margin: 20px;
-    font-size: medium;
+    margin: 30px;
+    font-size: 30px;
     font-weight: 100;
 }
 h5{
     text-align: center;
     margin: 20px;
-    font-size: medium;
-    font-weight: 300;
+    font-size: 30px;
+    font-weight: 200;
     color: #b43957;
 }
 button{
-    margin: 20px;
+    margin: 30px;
     padding: 10px 20px;
     border-radius: 50px;
     background-color: #b43957;
     color: white;
     border: none;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 100;
     
 }
 a{
     margin: 5px 10px;
     display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 15px;
+    width: 100px;
+    height: 100px;
+    padding: 25px;
     border: 2px solid #b43957;
     color: #b43957;
     border-radius: 50%;
@@ -81,13 +94,14 @@ a{
 
 .img{
     float: right;
-    width: 50%;
-    height: 100%;
+    width: 1000px;
+    height: 1000px;
     /* border: 2px solid chartreuse;  */
-}
-.img{
+    position: absolute;
     background-image: url(../img/bannar.jpg);
     background-size: cover;
-    background-position: top right;
-    border-radius: 50% 5% 5% 50%;   
+    background-position: center right;
+    border-radius: 50%;  
+    left: 50%;
+    top: -8%; 
 }
