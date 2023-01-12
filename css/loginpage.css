@@ -2,7 +2,8 @@
 @font-face {
     font-family: caviardreams;
     src: url(../caviardreams_regular_macroman/CaviarDreams-webfont.ttf);
-   
+    font-size: normal;
+    font-weight: normal;
 }
 
 
@@ -17,9 +18,11 @@
     height: 92vh;
     background-color:#f3e1e2;
     margin: 20px auto;
-   
+    font-family:  caviardreams;
+    text-align: center;
 }
 .box{
+    padding: 50px;
     height: 100%;
     width: 100%;
     background-color: white;
@@ -27,76 +30,78 @@
     box-shadow: 2px  2px 10px  gray;
     position: relative;
     overflow: hidden;
+    color: gray;
 }
-.form{
-   font-family:  caviardreams;
+.loginform{
     float: left;
     width: 50%;
     height: 100%;
-    padding: 20px;
-    /* border: 2px solid chartreuse; */
-    
+    padding: 20px; 
 }
-form{
-    text-align: center;
-}
- input{
-    padding: 20px;
+
+#login input{
+    padding: 15px;
     background-color: rgb(244, 232, 232);
     color: grey;
     border: none;
     font-size: 20px;
 }
-h1{
-    font-family: caviardreams;
-    text-align: center;
+.loginform h1{
+    
     margin: 30px;
     font-size: 50px;
     color: #b43957;
 }
 p{
-    font-family: caviardreams;
-    text-align: center;
     margin: 30px;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 100;
 }
-h5{
-    text-align: center;
-    margin: 20px;
-    font-size: 30px;
-    font-weight: 200;
+#login a{
+    display: block;
+    text-decoration: none;
+    margin: 25px;
+    font-size: 22px;
+    font-weight: bold;
     color: #b43957;
 }
-button{
+#login button{
     margin: 30px;
     padding: 10px 20px;
     border-radius: 50px;
     background-color: #b43957;
     color: white;
     border: none;
-    font-size: 30px;
-    font-weight: 100;
+    font-size: 20px;
+    font-weight: bold;
     
 }
-a{
-    margin: 5px 10px;
+ .socialaoth a{
+   margin: 5px 10px;
     display: inline-block;
-    width: 100px;
-    height: 100px;
-    padding: 25px;
+    width: 50px;
+    height: 50px;
+    padding: 10px;
     border: 2px solid #b43957;
     color: #b43957;
     border-radius: 50%;
     font-weight: 700;
-    font-size: larger;
+    font-size: 20px;
+    transition: 0.7;
 }
-
+.socialaoth a:hover{
+    background-color: #b43957;
+    color: white;
+}
+#login button:hover{
+    background-color:white;
+    color: #b43957;
+   border: 2px solid #b43957;
+}
 .img{
     float: right;
     width: 1000px;
     height: 1000px;
-    /* border: 2px solid chartreuse;  */
     position: absolute;
     background-image: url(../img/bannar.jpg);
     background-size: cover;
