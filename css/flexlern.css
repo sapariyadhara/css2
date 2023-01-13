@@ -1,0 +1,54 @@
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+.containor{
+    width: 100%;
+    height: 550px;
+    background-color: bisque;
+    display: flex;
+}
+.box1{
+    width: 80px;
+    height: 120px;
+    background-color: chocolate;
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold
+}
+.box2{
+    width: 120px;
+    height: 180px;
+    background-color: rgb(43, 92, 85);
+    margin: 10px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold
+}
+.wrap{
+    flex-wrap: wrap;
+     
+}
+.jastify{
+    justify-content: center;
+    flex-direction: column;
+}
+.jastifybt{
+    justify-content: space-between;
+}
+.jastifyArd{
+    justify-content: space-around;
+}
+.jastifyEvenly{
+    justify-content: space-evenly;
+}
+.alignitem{
+    align-items: center;
+}
+.alignContant{
+    align-content: center;
+    flex-wrap: wrap;
+    
+}
