@@ -8,6 +8,7 @@ h1{
     height: 550px;
     background-color: bisque;
     display: flex;
+    gap: 50px 30px;
 }
 .box1{
     width: 80px;
@@ -47,8 +48,12 @@ h1{
 .alignitem{
     align-items: center;
 }
-.alignContant{
+.alignContantcenter{
     align-content: center;
     flex-wrap: wrap;
     
+}
+.alignContant{
+    align-content: space-between;
+    flex-wrap: wrap;
 }
