@@ -57,3 +57,7 @@ h1{
     align-content: space-between;
     flex-wrap: wrap;
 }
+.alignself{
+    align-self: flex-end;
+}
+
