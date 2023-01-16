@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    padding: 20px;
+}
+.containor{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.block2{
+    align-self: center;
+}

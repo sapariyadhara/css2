@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Roboto,Helvetica Neue,Helvetica,Arial,sans-serif;
+    padding: 20px;
+}
+.containor{
+    /* width: 100%;
+    height: 550px; */
+    /* background-color: bisque; */
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+ h1{
+    align-self: flex-start;
+    display: block;
+    margin-bottom: 20px;
+   
+}
+p{
+    margin-bottom: 20px;
+}
+.containor p{
+    margin-top: 20px;
+    margin-right: 40px;
+}
+
