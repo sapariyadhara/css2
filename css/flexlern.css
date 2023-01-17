@@ -60,4 +60,13 @@ h1{
 .alignself{
     align-self: flex-end;
 }
+.basis .box1{
+    flex-basis: 200px;
+}
+.basis .box2{
+    flex-basis: 200px;
+}
+.flex .box1{
+    flex: 0 0 50px;
+}
 
