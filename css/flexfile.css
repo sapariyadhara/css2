@@ -7,14 +7,14 @@ body{
     font-family: 'Roboto', sans-serif;
    
 }
-h1 h3 p {
+h2 h3 p {
     color: #0e1724;;
 }
 .containor{
     max-width: 1200px;
     margin: 0 auto;
 }
-.containor h1{
+.containor h2{
     margin: 30px 0px;
     font-weight: 700;
     font-size: 40px;
@@ -83,7 +83,7 @@ hr{
 .work-dec{
     flex-basis: 50%;
 }
-.work-dec h1{
+.work-dec h2{
     font-size: 41px;
     margin-bottom: 40px;
 }
@@ -134,7 +134,7 @@ hr{
     width:72px;
     height: 72px;
 }
-.contactdata h1{
+.contactdata h2{
     font-size: 41px;
     margin-bottom: 40px;
 }
@@ -159,16 +159,19 @@ hr{
 } */
 .saf-sec{
     display: flex;
-    column-gap: 90px;
+    column-gap: 100px;
 }
 .saf-secimg img{
     width:510px;
     height: 510px;
 }
-
-.Safensecuredata h1{
+.Safensecuredata{
+    padding-right: 24px;
+}
+.Safensecuredata h2{
     font-size: 41px;
     /* margin: 40px 0px; */
+   
 }
 .Safensecuredata p{
     font-size: 20px;
@@ -176,13 +179,13 @@ hr{
     margin-bottom: 40px;
 }
 .saf-secdata{
-    gap: 0px 60px;
+    gap: 0px 40px;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 /* .block3{
    padding-left: 90px;
-/* } */ */
+/* } */ 
 .saf-secdata img{
     width:72px;
     height: 72px;
@@ -191,5 +194,103 @@ hr{
     font-size: 20px;
     margin: 20px 0px;
 }
+#bids{
+    margin: 40px 0px;
+    width: 100%;
+    background-color: #1f2836;
+    padding: 20px 40px;
+    display: flex;
+   
+}
+.biddata{
+    margin: 50px 280px;
+}
+.biddata h2{
+    font-size: 41px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.biddata p{
+    font-size: 25px;
+    color: #fff;
+    margin-bottom: 20px;
+}
+.biddata button{
+    margin-top: 40px;
+    background-color:#f20091;
+    border: none;
+    color: #fff;
+    padding:  10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.convince{
+    margin-top: 100px;
+    
+}
+.convince p{
+    font-size: 24px;
+    line-height: 32px;
+}
+.imgdesing{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 0px;
+}
+.desings{
+    margin-right: 20px;
+}
+.desings img{
+    width: 376px;
+    height: 282px;
+}
+.desings h3{
+    font-size: 24px;
+    line-height: 35px;
+}
+.convince  button{
+    
+    margin: 100px 0px;
+    background-color:#f20091;
+    border: none;
+    color: #fff;
+    padding:  10px 20px;
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+}
+.addhelp{
+    background-color: #1f2836;
+    width: 100%;
+    padding: 64px 328px;
+}
+
+
+.addhelp h2{
+    font-size: 41px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.addhelp h3{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.link {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0px 100px;
+    width: 800px;
+}
+.link a{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+
 
 
