@@ -48,19 +48,15 @@ hr{
     width: 90%;
     height: 1px;
     border: none;
-    margin: 60px auto;
+    margin: 70px auto;
     background-color: rgb(219, 209, 209);
 }
-/* .containor1{
-    display: flex;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 27px;
-    column-gap: 70px;
-} */
+
 .workdata img{
     width:510px;
     height: 510px;
+    /* margin-top: 32px;
+    padding-right: 20px; */
 }
 /* .containor1 h1{
     font-size: 41px;
@@ -76,33 +72,39 @@ hr{
 } */
 .workdatadec{
     display: flex;
+    gap: 0px 43px;
+    /* padding: 10px 0px; */
 }
 .workdata{
     flex-basis: 50%;
+    margin-top: 25px;
+    margin-left: 20px;
 }
 .work-dec{
     flex-basis: 50%;
+    padding-right: 20px;
 }
 .work-dec h2{
     font-size: 41px;
-    margin-bottom: 40px;
+    margin-bottom: 31px;
 }
 .work-dec h3{
     font-size: 20px;
-    margin: 20px 0px;
+    margin: 16px 0px;
 }
 .work-dec p{
     font-size: 16px;
     line-height: 25px;
 }
 .work-dec button{
-    margin-top: 40px;
+    margin-top: 10px;
     background-color:#f20091;
     border: none;
     color: #fff;
-    padding:  10px 20px;
+    padding:  12px 20px;
     font-size: 20px;
     font-weight: 700;
+    border-radius: 4px;
 }
 
 /* .containor2{
@@ -120,6 +122,7 @@ hr{
 .contactimg img{
     width:510px;
     height: 510px;
+    margin-top: 31px;
 }
 .imgbox{
     display: flex;
@@ -127,7 +130,7 @@ hr{
     justify-content: space-between;
 }
 .contactdata{
-    
+    margin-left: 8px;
     flex-basis: 50%;
 }
 .imgbox img{
@@ -136,7 +139,7 @@ hr{
 }
 .contactdata h2{
     font-size: 41px;
-    margin-bottom: 40px;
+    margin-bottom: 25px;
 }
 .contactdata p{
     font-size: 20px;
@@ -145,7 +148,7 @@ hr{
 }
 .contactdata h3{
     font-size: 20px;
-    margin: 20px 0px;
+    margin: 8px 0px;
 }
 /* .imgbox p{
     font-size: 20px;
@@ -249,16 +252,19 @@ hr{
     font-size: 24px;
     line-height: 35px;
 }
-.convince  button{
-    
+.viewbutton{
+    display: flex;
+    justify-content: center;
+}
+.viewbutton  button{
+    border-radius: 4px;
     margin: 100px 0px;
     background-color:#f20091;
     border: none;
     color: #fff;
-    padding:  10px 20px;
+    padding:  12px 20px;
     font-size: 20px;
     font-weight: 700;
-    text-align: center;
 }
 .addhelp{
     background-color: #1f2836;
