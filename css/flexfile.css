@@ -285,7 +285,7 @@ hr{
 .addhelp{
   
 
-    padding: 35px 0px 50px 0px;
+    padding: 35px 0px 60px 0px;
 }
 
 
@@ -298,7 +298,7 @@ hr{
     font-size: 24px;
     color: #fff;
     font-weight: 400;
-    margin-bottom: 30px;
+    margin-bottom: 28px;
 }
 .link {
     display: flex;
@@ -311,6 +311,7 @@ hr{
     color: #fff;
     font-weight: 300;
     margin-bottom: 30px;
+    flex-basis:350px ;
 }
 #feedback{
     background-color: #161e2c;
@@ -318,7 +319,7 @@ hr{
 }
 .Categories{
     display: flex;
-    gap: 0px 50px;
+    gap: 0px 43px;
 }
 .Categoriesitem{
     display: flex;
@@ -329,13 +330,16 @@ hr{
 .Categoriesitem img{
     width: 133px;
     height: 32px;
+    margin-bottom: 20px;
 }
 #feedback , h3 , a {
     color: #f7f7f7;
+
 }
 .Categories h3{
     font-size: 16px;
     font-weight: 700;
+    margin-bottom: 11px;
 }
 .Categories a{
     color: #BEC0C2;
@@ -347,42 +351,30 @@ hr{
     font-size: 14px;
     padding: 9px 0px;
     color: #f7f7f7;
-    font-weight: 700;
+    font-weight: 400;
 }
-.copyright{
+.support a i{
+    padding-right: 10px;
+    font-size: 20px;
+}
+.apps{
     display: flex;
-    justify-content: space-between;
+    gap: 18px 0px;
 }
-.copyright h3{
-    font-size: 14px;
-}
-.copyright p{
-    font-size: 13px;
-}
-.ipl p{
-    font-size: 11px;
-    line-height: 20px;
-}
-#feedback hr{
-    margin: 32px 0px;
-    border: none;
-    height: 0.3px;
-    background-color: #BEC0C2;
-    width: 100%;
-}
+
 .applestoreb button{
     padding: 1px;
     display: flex;
     width: 136px;
     height: 40px;
-    background-color: #0e1724;
+    background-color: #161e2c;
     color: white;
     border: 1px solid white;
     border-radius: 4px;
 }
 .applestoreb i {
     flex-basis: 30%;
-    font-size: 30px;
+    font-size: 28px;
     align-self: center;
 }
 .applestoreb p{
@@ -397,10 +389,12 @@ hr{
     display: flex;
     width: 136px;
     height: 40px;
-    background-color: #0e1724;
+    background-color: #161e2c;
     color: white;
     border: 1px solid white;
     border-radius: 4px;
+    font-weight: 300;
+    font-size: 8px;
 }
 .googleb i{
     flex-basis: 30%;
@@ -412,7 +406,36 @@ hr{
     text-align: left;
 }
 .googleb p span {
-    font-size: 18px;
+    font-size: 16px;
+}
+.icons a i{
+    width: 20px;
+    height: 20px;
+    font-size: 20px;
+    color: #fff;
+    margin-right: 17px;
+}
+#feedback hr{
+    margin: 80px 0px 25px 0px;
+    border: none;
+    height: 0.3px;
+    background-color: #BEC0C2;
+    width: 100%;
+}
+.copyright{
+    display: flex;
+    justify-content: space-between;
+}
+.copyright h3{
+    font-size: 14px;
+}
+.copyright p{
+    font-size: 13px;
+    margin: 0px;
+}
+.ipl p{
+    font-size: 11px;
+    line-height: 17px;
 }
 
 
