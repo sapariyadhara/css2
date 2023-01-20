@@ -324,6 +324,7 @@ hr{
     display: flex;
     flex-direction: column;
     gap: 7px 0px;
+    flex: 135px;
 }
 .Categoriesitem img{
     width: 133px;
@@ -367,6 +368,51 @@ hr{
     border: none;
     height: 0.3px;
     background-color: #BEC0C2;
+    width: 100%;
+}
+.applestoreb button{
+    padding: 1px;
+    display: flex;
+    width: 136px;
+    height: 40px;
+    background-color: #0e1724;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+.applestoreb i {
+    flex-basis: 30%;
+    font-size: 30px;
+    align-self: center;
+}
+.applestoreb p{
+    font-size: 9px;
+    text-align: left;
+}
+.applestoreb p span{
+    font-size: 20px;
+}
+.googleb button{
+    padding: 1px;
+    display: flex;
+    width: 136px;
+    height: 40px;
+    background-color: #0e1724;
+    color: white;
+    border: 1px solid white;
+    border-radius: 4px;
+}
+.googleb i{
+    flex-basis: 30%;
+    font-size: 24px;
+    align-self: center;
+}
+.googleb p {
+    font-size: 9px;
+    text-align: left;
+}
+.googleb p span {
+    font-size: 18px;
 }
 
 

@@ -1,0 +1,44 @@
+.combi > p {
+    font-size: 20px;
+    color: brown;
+}
+.combi h2 + p{
+    color: aqua;
+}
+.combi div ~ p{
+    font-size: 30px;
+    font-weight: 700;
+}
+.anchor a:link{
+    color: blueviolet;
+}
+.anchor a:hover{
+    color: brown;
+}
+.anchor a:active{
+    color: yellowgreen;
+}
+.anchor a:visited{
+    color: black;
+}
+ul li:first-child p{
+    font-weight: 700;
+}
+.uldummy ul li:last-child p{
+    color: chocolate;
+}
+ul li:nth-child(2){
+    font-size: 20px;
+    color: rgb(158, 216, 23);
+}
+p i:first-child{
+    font-size: 40px;
+}
+li:nth-child(4) i{
+    font-size: 70px;
+    font-weight: bold;
+}
+input:focus{
+    outline: none;
+    border: 2px solid rgb(44, 56, 33);
+}
