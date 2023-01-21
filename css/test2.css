@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', Arial ,sans-serif;
+}
+.containor{
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 64px 0px;
+    color: #111111;
+}
+.customblock{
+    display: flex;
+   
+    /* padding: 48px 0px 64px 0px; */
+}
+.custmdata{
+    flex-basis: 50%;
+}
+.customblock h1{
+    font-size: 35.2px;
+    font-weight: 600;
+    margin: 51px 0px 40px 0px
+}
+.customblock p{
+    font-size: 20px;
+    line-height: 29px;
+}
+.custmimg{
+    flex-basis: 50%;
+    /* border: 1px solid #111111; */
+    display: flex;
+    /* justify-content: center; */
+   
+}
+.custmimg img{
+    width: 330px;
+    height: 275px;
+    margin-left: 123px;
+}
+.card{
+    display: flex;
+    padding: 60px 0px 0px 0px;
+}
+.card img{
+    width: 70px;
+    height: 70px;
+}
+.cardsbox{
+    width: 376px;
+    height: 220px;
+  
+    background-color: #ffffff;
+    margin: 10px;
+    padding: 13px 29px 40px 10px;
+    box-shadow:0px -2px 7px rgb(202 198 255);
+}
+.cardsbox h2{
+    font-size: 20px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #111111;
+}
+.cardsbox p{
+    font-size: 16px;
+    line-height: 23px;
+    color: #707070;
+}
+
+hr{
+   
+    height: 1px;
+    border: none;
+    margin: 15px auto;
+    background-color: rgb(219, 209, 209);
+}
