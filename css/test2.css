@@ -23,8 +23,12 @@ body{
 }
 .customblock h1{
     font-size: 35.2px;
-    font-weight: 600;
+    font-weight: 700;
     margin: 51px 0px 40px 0px
+}
+.custmdata h1:link{
+    border-bottom: 2px solid rgb(5, 84, 140);
+    width: 12px;
 }
 .customblock p{
     font-size: 20px;
@@ -57,12 +61,12 @@ body{
     background-color: #ffffff;
     margin: 10px;
     padding: 13px 29px 40px 10px;
-    box-shadow:0px -2px 7px rgb(202 198 255);
+    box-shadow:0px 2px 7px rgb(202 198 255);
 }
 .cardsbox h2{
     font-size: 20px;
     margin-bottom: 8px;
-    font-weight: 600;
+    font-weight: 700;
     color: #111111;
 }
 .cardsbox p{

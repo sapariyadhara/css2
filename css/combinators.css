@@ -42,3 +42,64 @@ input:focus{
     outline: none;
     border: 2px solid rgb(44, 56, 33);
 }
+
+.element p::first-letter{
+    font-size: 50px;
+}
+.element P::first-line{
+    color: indianred;
+}
+
+ h1 + p::first-line{
+    color: red;
+}
+h1::before{
+    content: '*';
+}
+h1::after{
+    content: '+';
+}
+.customlist ul li{
+    list-style-type: none;
+    margin-bottom: 10px;
+}
+.customlist ul li::before{
+    content: '*';
+    background-color: brown;
+    padding: 4px 3px;
+    margin-right: 10px;
+    color: #fff;
+}
+.listitem ul{
+    /* position: relative; */
+}
+.listitem ul li{
+    list-style-type: none;
+    position: relative;
+    
+}
+.listitem ul li::before{
+    content: '';
+    position: absolute;
+    width: 15px;
+    height: 15px;
+    top: 0px;
+    left: -20px;
+}
+.listitem ul li:first-child::before{
+    background-image: url(../img/home.png);
+    background-size: 100%;  
+}
+.listitem ul li:nth-child(2)::before{
+    background-image: url(../img/product.png);
+    background-size: 100%;
+}
+.listitem ul li:nth-child(3)::before{
+    background-image: url(../img/contact.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.listitem ul li:last-child::before{
+    background-image: url(../img/about.png);
+    background-size: 100%;
+}
