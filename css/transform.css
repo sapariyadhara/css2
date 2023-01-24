@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containor{
+    max-width: 1200px;
+}
+h2{
+    text-align: center;
+    margin: 20px;
+}
+.box{
+    margin: 0 auto;
+    width: 250px;
+    height: 400px;
+    background-color: aqua;
+}
+.box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center center;
+    transition: 1s;
+}
+.scale img:hover{
+    transform: scale(1.2);
+    /* transform: scale(1.2 , 1.4); */
+}
+.scaleX img:hover{
+    transform: scaleX(1.2);
+}
+.scaleY img:hover{
+    transform: scaleY(1.4);
+}
+.translate img:hover{
+    transform: translate(20px , 30px);
+    /* transform: translate(x , y); */
+}
