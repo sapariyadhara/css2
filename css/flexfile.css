@@ -49,7 +49,7 @@ body{
     flex: 0 0 380px;
 }
 hr{
-    width: 90%;
+    width: 97%;
     height: 1px;
     border: none;
     margin: 70px auto;
@@ -255,11 +255,52 @@ hr{
 .desings{
     margin:0px 20px 0px 0px;
 }
-.desings img{
+.desingsbox{
     width: 372px;
     height: 282px;
-    margin-bottom: 10px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
 }
+.desings img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: 10px;
+    position: absolute;
+    transition: 0.5s;
+
+}
+.desingsbox .innerdata{
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0 0 0 / 0.6);
+    opacity: 0;
+}
+.desingsbox:hover img{
+    transform: scale(1.2);
+}
+.desingsbox:hover .innerdata{
+    opacity: 1;
+}
+.innerdata button{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    padding: 12px 24px;
+    font-size: 19px;
+    font-weight: bold;
+    border: 2px solid #f7f7f7;
+    background-color: transparent;
+    color: white;
+    cursor: pointer;
+}
+.desingsbox button:hover{
+    background-color: rgba(255 255 255 / 0.3);
+}
+
 .desings h3{
     font-size: 24px;
     line-height: 33px;
@@ -314,11 +355,12 @@ hr{
 }
 #feedback{
     background-color: #161e2c;
-    padding: 32px 0px;
+    padding: 32px 0px 0px 0px;
 }
 .Categories{
     display: flex;
     gap: 0px 50px;
+
 }
 .Categoriesitem{
     display: flex;
@@ -330,7 +372,13 @@ hr{
     width: 133px;
     height: 32px;
 }
-#feedback , h3 , a {
+#feedback  h3 {
+    color: #f7f7f7;
+}
+#feedback  a {
+    color: #f7f7f7;
+}
+#feedback p {
     color: #f7f7f7;
 }
 .Categories h3{
@@ -364,10 +412,10 @@ hr{
     line-height: 20px;
 }
 #feedback hr{
-    margin: 32px 0px;
+    margin: 80px 0px 28px 0px;
     border: none;
-    height: 0.3px;
-    background-color: #BEC0C2;
+    height: 1px;
+    background-color: #a3a7ab;
     width: 100%;
 }
 .applestoreb button{
