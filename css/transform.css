@@ -15,6 +15,7 @@ h2{
     width: 250px;
     height: 400px;
     background-color: aqua;
+    perspective: 1000px;
 }
 .box img{
     width: 100%;
@@ -36,4 +37,26 @@ h2{
 .translate img:hover{
     transform: translate(20px , 30px);
     /* transform: translate(x , y); */
+}
+.skew:hover img{
+    transform: skew(30deg);
+}
+.skewX:hover img{
+    transform: skewX(30deg);
+}
+.skewY:hover img{
+    transform: skewY(30deg);
+}
+.rotate:hover img{
+    transform: rotate(30deg);
+}
+.rotateX:hover img{
+    transform: rotateX(30deg);
+}
+.rotateY:hover img{
+    transform: rotateY(180deg);
+}
+.matrix:hover img{
+    /* transform: matrix(scaleX(),skewY(),skewX(),scaleY(),translateX(),translateY()); */
+    transform: matrix(1, 2, -1, 1, 80, 80);
 }
