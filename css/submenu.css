@@ -28,11 +28,14 @@ header ul li a:hover{
 }
 header nav ul li ul {
     position: absolute;
-    top: 36px;
+    top: 58px;
     left: 0;
     width: 117px;
     background-color: rgb(168, 165, 165);
     display: none;
+}
+header nav ul li:hover a i{
+    transform: rotate(90deg);
 }
 header nav ul li ul li a{
     display: inline-block;
@@ -42,6 +45,9 @@ header nav ul li ul li a{
 header nav ul li ul li a ,header nav ul li ul li {
     display: block;
     position: relative;
+}
+header nav ul li ul li:hover a i{
+    transform: rotate(360deg);
 }
 header nav ul li:hover ul{
     display: inline-block;
@@ -54,33 +60,70 @@ header nav ul li ul li ul {
 }
 header nav ul li ul li:hover ul {
     display: inline-block !important;
+
+}
+nav > i{
+    padding: 20px 0;
+}
+nav > i , nav ul >i{
+    display: none !important;
 }
 @media screen and (max-width:768px) {
 
-    nav ul{
+    nav > ul{
         position: absolute;
         top: 0;
-        right: 0;
+        right: -70%;
         background-color: brown;
         width: 70%;
+        height: 100vh;
+        transition: all 1s;
+    }
+    header nav ul li a{
+        width: 100%;
     }
     nav ul li{
-        display: block;
-        position: relative;
+        display: block; 
     }
-    nav ul li ul li  {
-        position: absolute;
-        top: 0px;
-        right: 117px;
-    }
-    header nav ul li ul li{
+    nav ul li ul {
         position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    header nav ul li ul li a {
+        padding-left: 60px;
+    }
+    header nav ul li ul li ul li a{
+        padding-left: 120px;
+    }
+    header nav ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
     }
     header nav ul li ul li ul {
-        position: absolute;
+        position: relative;
         top: 0;
-        right: 117px;
+        left: 0;
+        width: 100%;
     }
+    nav ul > i{
+        text-align: right;
+        display: inline-block !important;
+        width: 100%;
+        padding: 20px;
+        font-size: 20px;
+
+    }
+    nav > i{
+        display: inline-block !important;
+    }
+    .showHide{
+        right: 0;
+    }
+
 
 
 }

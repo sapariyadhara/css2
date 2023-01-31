@@ -22,11 +22,13 @@ header nav ul li {
     list-style-type: none;
     display: inline-block;
     position: relative;
+    
 }
 header nav ul li a{
     text-decoration: none;
     display: inline-block;
     padding: 24px;
+    
 }
 header nav ul li a:hover  {
     background-color: black;
@@ -43,7 +45,8 @@ header nav ul li ul{
 header nav ul li ul li a ,header nav ul li ul li {
     display: block;
     position: relative;
-
+    /* width: 100%; */
+    /* background-color:dimgray; */
 }
 header nav ul li:hover ul{
     display: inline-block;
@@ -58,32 +61,19 @@ header nav ul li ul li:hover ul  {
     display: inline-block !important;
 }
 @media screen and (max-width:768px) {
-    nav ul {
+    nav > ul {
         position: absolute;
         top: 0;
         right: 0;
         width: 70%;
         background-color: brown;
     }
-    header nav ul li{
+    header nav ul li ul{
         position: relative;
         display: block;
-        
+        /* width: 100%; */
     }
-    header nav ul li ul li {
-        position: absolute;
-        top: 0;
-        left: 162px;
-    }
-    header nav ul li ul li{
-        position: relative;
-    }
-    header nav ul li ul li ul {
-        position: absolute;
-        top: 0;
-        left: 162px;
-    }
-
+  
 
 }
 
