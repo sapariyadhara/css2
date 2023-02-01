@@ -38,13 +38,16 @@ header nav ul li:hover .megamenu{
     width: 70%;
     /* height: 300px; */
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     display: none;
+   
 }
+
 .megamenu li{
     position: relative;
-    padding-right: 40px;  
-    /* flex-basis: 20%;  */
+    padding-right: 50px;      
+    flex-basis: 17%; 
+    /* border: 2px solid black; */
 }
 .megamenu li h3{
     font-size: 25px;
@@ -58,11 +61,42 @@ header nav ul li:hover .megamenu{
     content: '';
     position: absolute;
     top: 7%;
-    right: 10px;
+    right: 0;
     width: 1px;
     height: 85%;
     background-color: #fff;
 }
 .megamenu li:last-child::after{
     display: none;
+}
+@media screen and (max-width:768px) {
+    header nav > ul{
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: brown;
+        width: 70%;
+        height: 100vh;
+    }
+    header nav  ul  li{
+        display: block;
+    }
+    header nav ul li a{
+        width: 100%;
+    }
+    header nav ul li ul{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .megamenu{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding-left: 40px;
+        /* flex-direction: column; */
+    }
+
 }
