@@ -26,6 +26,9 @@ header ul li a:hover{
     background-color: black;
     color: #fff;
 }
+header nav ul li a i{
+    transition: all 0.5s;
+}
 header nav ul li ul {
     position: absolute;
     top: 58px;
@@ -47,7 +50,7 @@ header nav ul li ul li a ,header nav ul li ul li {
     position: relative;
 }
 header nav ul li ul li:hover a i{
-    transform: rotate(360deg);
+    transform: rotateY(45deg);
 }
 header nav ul li:hover ul{
     display: inline-block;

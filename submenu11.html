@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/submenu11.css">
     <title>Document</title>
 </head>
@@ -12,15 +13,17 @@
         <a href="#">LOGO</a>
 
         <nav>
-            <ul>
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+            <ul id="menu">
+                <i class="fa-solid fa-xmark" onclick="toggleMenu()"></i>
                 <li><a href="#">Home</a></li>
                 <li> 
-                    <a href="#">Products ></a>
+                    <a href="#">Products <i class="fa-solid fa-chevron-right"></i></a>
                     <ul>
-                        <li><a href="#">Elecronicse</a></li>
+                        <li><a href="#">Electronics</a></li>
                         <li><a href="#">Fashion</a></li>
                         <li> 
-                            <a href="#">Books ></a>
+                            <a href="#">Books <i class="fa-solid fa-chevron-right"></i></a>
                             <ul>
                                 <li><a href="#">Fiction</a></li>
                                 <li><a href="#">Non-fiction</a></li>
@@ -35,5 +38,11 @@
             </ul>
         </nav>
     </header>
+
+    <script>
+        function toggleMenu(){
+           document.getElementById("menu").classList.toggle('showHide')
+        }
+    </script>
 </body>
 </html>

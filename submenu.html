@@ -13,9 +13,9 @@
         <a href="#">LOGO</a>
 
         <nav>
-            <i class="fa-solid fa-bars" onclick="toggelMenu()"></i>
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
             <ul id="menu">
-                <i class="fa-solid fa-xmark" onclick="toggelMenu()"></i>
+                <i class="fa-solid fa-xmark" onclick="toggleMenu()"></i>
                 <li><a href="#">Home</a></li>
                 <li>
                     <a href="#">Products  <i class="fa-solid fa-chevron-right"></i></a>
@@ -29,18 +29,31 @@
                             </ul>
                         </li>
                         <li><a href="#">Toys</a></li>
-                        <li><a href="#">Cosmatics</a></li>
+                        <li>
+                            <a href="#">Fashion <i class="fa-solid fa-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">Man</a></li>
+                                <li><a href="#">Woman</a></li>
+                                <li><a href="#">Kids</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </li>
                 <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
+                <li>
+                    <a href="#">Contact Us <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul>
+                        <li><a href="#">Surat</a></li>
+                        <li><a href="#">Rajkot</a></li>
+                    </ul>
+                </li>
                 <li><a href="#">Cart</a></li>
             </ul>
         </nav>
     </header>
 
     <script>
-        function toggelMenu(){
+        function toggleMenu(){
             document.getElementById("menu").classList.toggle('showHide')
         }
     </script>

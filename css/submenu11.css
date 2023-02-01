@@ -2,78 +2,129 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-size: 24px;
     font-family: sans-serif;
-    color: black;
 }
 header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 20px ;
-    box-shadow: 2px 2px 10px rgba(0 0 0 / 0.2)
+    padding: 0 20px;
+    box-shadow: 2px 2px 8px rgba(0 0 0 /0.3);
 }
-header a{
-    text-decoration: none;
-    display: inline-block;
-    padding: 24px;
-}
-header nav ul li {
+header nav ul li{
     list-style-type: none;
     display: inline-block;
     position: relative;
-    
 }
 header nav ul li a{
-    text-decoration: none;
     display: inline-block;
-    padding: 24px;
-    
+    text-decoration: none;
+    font-size: 24px;
+    color: #000;
+    padding: 20px;
+   
 }
-header nav ul li a:hover  {
-    background-color: black;
+header nav ul li a:hover {
+    background-color: #000;
     color: #fff;
 }
 header nav ul li ul{
     position: absolute;
-    top: 75px;
+    top: 68px;
     left: 0;
-    background-color:dimgray;
-    width: 162px;
+    background-color: dimgray;
+    width: 155.5px;
     display: none;
-}
-header nav ul li ul li a ,header nav ul li ul li {
-    display: block;
-    position: relative;
-    /* width: 100%; */
-    /* background-color:dimgray; */
+    
 }
 header nav ul li:hover ul{
     display: inline-block;
 }
-header nav ul li ul li ul  {
+header nav ul li ul li a{
+    display: inline-block;
+    padding: 20px;
+   
+}
+header nav ul li a i{
+    transition: all 0.5s;
+}
+header nav ul li ul li , header nav ul li ul li a{
+    display: block;
+    position: relative;
+}
+header nav ul li ul li ul{
     position: absolute;
     top: 0;
-    left: 162px;
+    left: 155.5px;
     display: none !important;
 }
-header nav ul li ul li:hover ul  {
+header nav ul li ul li:hover ul{
     display: inline-block !important;
 }
-@media screen and (max-width:768px) {
-    nav > ul {
-        position: absolute;
-        top: 0;
-        right: 0;
-        width: 70%;
-        background-color: brown;
-    }
-    header nav ul li ul{
-        position: relative;
-        display: block;
-        /* width: 100%; */
-    }
-  
+header nav > i , header nav ul > i{
+    display: none !important;
+}
+nav > i{
+    padding: 20px 0;
+    font-size: 20px;
+}
+header nav ul li:hover a i{
+    transform: rotate(90deg);
+}
+header nav ul li ul li:hover a i{
+    transform: rotateY(45deg);
+}
 
+@media screen and (max-width:768px) {
+    header nav > ul{
+        position: absolute;
+        /* display: block; */
+        width: 70%;
+        top: 0;
+        right: -70%;
+        background-color: brown;
+        height: 100vh;
+        transition: all 1s;
+    }
+    nav ul li{
+        display: block;
+        width: 100%;
+    }
+    nav ul li a{
+        display: block;
+        width: 100%;
+    }
+    header nav ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+       
+    }
+    header nav ul li ul li ul{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    header nav ul li ul li a {
+         padding-left: 60px;
+    }
+    header nav ul li ul li ul li a{
+        padding-left: 120px;
+    }
+    header nav ul > i{
+        text-align: right;
+        width: 100%;
+        padding: 15px 20px 10px 10px;
+        font-size: 24px;
+        display: inline-block !important ;
+    }
+    header nav > i {
+        display: inline-block !important ;
+    }
+    .showHide{
+        right: 0;
+    }
 }
 
