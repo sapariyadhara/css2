@@ -22,7 +22,14 @@ header ul li a{
     color: black;
     padding: 20px;
 }
-header ul li a:hover{
+
+nav li:hover > a , nav li a:active{
+    background-color: black;
+    color: #fff;
+    cursor: pointer;
+    width: 100%;
+}
+header nav ul li a:hover{
     background-color: black;
     color: #fff;
 }
@@ -47,7 +54,10 @@ header nav ul li ul li a ,header nav ul li ul li {
     position: relative;
 }
 header nav ul li ul li:hover a i{
-    transform: rotate(360deg);
+    transform: rotateY(45deg);
+}
+header nav ul li a i{
+    transition: all 0.5s;
 }
 header nav ul li:hover ul{
     display: inline-block;

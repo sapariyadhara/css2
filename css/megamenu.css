@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 2px 2px 9px rgb(242, 231, 231);
+    position: relative;
+}
+header nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    
+}
+header nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+    padding: 20px;
+    font-size: 20px;
+}
+header nav > ul > li > a:hover{
+    background-color: black;
+    color: #fff;
+}
+header nav ul li:hover .megamenu{
+    display: block;
+}
+.megamenu{
+    position: absolute;
+    top: 62px;
+    right: 60px;
+    background-color: dimgray;
+    width: 70%;
+    /* height: 300px; */
+    display: flex;
+    justify-content: space-around;
+    display: none;
+}
+.megamenu li{
+    position: relative;
+    padding-right: 40px;  
+    /* flex-basis: 20%;  */
+}
+.megamenu li h3{
+    font-size: 25px;
+    padding: 20px;
+}
+.megamenu li a{
+    display: block;
+}
+
+.megamenu li::after{
+    content: '';
+    position: absolute;
+    top: 7%;
+    right: 10px;
+    width: 1px;
+    height: 85%;
+    background-color: #fff;
+}
+.megamenu li:last-child::after{
+    display: none;
+}
