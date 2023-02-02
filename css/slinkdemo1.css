@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: grey;
+}
+ .your-class{ 
+    width: 90%;
+    height: 100vh;
+    margin: 0 auto;
+    /* position: relative; */
+} 
+.your-class .slides{
+    width: 100%;
+    height: 100vh;
+    /* margin: 0 auto; */
+    position: relative;
+}
+.your-class .slides img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.your-class .slick-prev::before{
+    content:"\f053";
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    top: 50%;
+    left: -10px;
+    background-color: black;
+    padding: 20px ;
+    border-radius: 50%;
+   
+}
+.your-class .slick-next::before{
+    content:"\f054" ;
+    font-family: "Font Awesome 6 Free";
+    position: absolute;
+    top: 50%;
+    right: 35px;
+    background-color: black;
+    padding: 20px;
+    border-radius: 50%;
+}
+.your-class i:hover{
+    transform: scale(1.2);
+}
+
