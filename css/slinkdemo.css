@@ -65,6 +65,17 @@ body{
     /* color: #fff; */
     border: 1px solid #fff;
 }
+.slickdemo .slick-dots li button:before{
+    content: '.';
+    /* font-family: 'slick'; */
+    position: absolute;
+    top: -50px;
+    font-size: 50px;
+    color: #fff;
+}
+.slickdemo .slick-dots li button{
+    
+}
 
 
 
@@ -127,4 +138,9 @@ body{
     line-height: 55px;
     transition: all 0.5s;
     color: #fff;
+}
+.display .slick-next:hover , .display .slick-prev:hover{
+    background-color: rgba(0 0 0/0.3);
+    /* color: #fff; */
+    border: 1px solid #fff;
 }
