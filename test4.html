@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/test4.css">
+</head>
+<body>
+    <header>
+        <a href="#">LOGO</a>
+
+        <nav>
+
+            <i class="fa-solid fa-bars" onclick="toggleMenu()"></i>
+
+            <ul id="menu">
+
+                <i class="fa-solid fa-xmark" onclick="toggleMenu()"></i>
+
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Products <i class="fa-solid fa-chevron-right"></i></a>
+                    <ul>
+                        <li><a href="#">Mobile</a></li>
+                        <li><a href="#">Laptop</a></li>
+                        <li><a href="#">Toys</a></li>
+                        <li><a href="#">A/C</a></li>
+                        <li>
+                            <a href="#">Books <i class="fa-solid fa-chevron-right"></i></a>
+                            <ul>
+                                <li><a href="#">Fiction</a></li>
+                                <li><a href="#">Non-Fiction</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <script>
+        function toggleMenu(){
+            document.getElementById("menu").classList.toggle('showHide')
+        }
+    </script>
+</body>
+</html>

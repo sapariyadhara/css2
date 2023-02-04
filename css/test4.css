@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: sans-serif;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+header nav ul{
+    list-style-type: none;
+   
+}
+header nav ul li{
+    display: inline-block;
+    position: relative;
+   
+}
+header nav ul li a{
+    display: inline-block;
+    text-decoration:  none;
+    font-size: 24px;
+    color: black;
+    padding: 20px;
+    
+}
+header nav ul li a:hover{
+    background-color: black;
+    color: #fff;
+}
+header nav ul li ul{
+    position: absolute;
+    background-color: grey;
+    display: none;
+    top: 67px;
+    left: 0;
+    width: 160px;
+}
+header nav ul li ul li a ,header nav ul li ul li {
+    width: 100%;
+}
+header nav ul li ul li {
+    position: relative;
+   
+}
+header nav ul li ul li ul{
+    position: absolute;
+    top: 0;
+    left: 160px;
+    display: none !important;
+}
+header nav ul li:hover ul{
+    display: inline-block;
+}
+header nav ul li ul li:hover ul{
+    display: inline-block !important;
+}
+header nav ul li:hover a i{
+    transform: rotate(90deg);
+}
+header nav ul li ul li:hover a i{
+    transform: rotateY(45deg);
+}
+header nav ul li a i{
+    transition: all 0.5s;
+}
+header nav > i , header nav ul > i{
+    display: none !important;
+} 
+header nav ul li > a:hover li:active{
+    background-color: black;
+    color: #fff;
+}
+
+@media screen and (max-width:768px) {
+    header nav > ul  {
+        display: block;
+        position: absolute;
+        width: 70%;
+        height: 100vh;
+        right: -70%;
+        background-color: brown;
+        top: 0;
+        transition: all 1s;
+    }
+    header nav  ul li {
+        display: block;
+        width: 100%;
+    }
+    header nav  ul li a {
+        display: block;
+        width: 100%;
+    }
+    header nav ul li ul {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+        
+    }
+    header nav ul li ul li , header nav ul li ul li a{
+        width: 100%;
+        display: block;
+        position: relative;
+    }
+    header nav ul li ul li ul{
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    header nav ul li ul li a{
+        padding-left: 60px;
+    }
+    header nav ul li ul li ul li a{
+        padding-left: 100px;
+    }
+    header nav > i , header nav ul > i{
+        display: block !important;
+    }
+    .showHide {
+        right: 0;
+    }
+    header nav > i{
+        padding: 20px;
+        
+    }
+    header nav  ul > i{
+        text-align: right;
+        padding: 20px;
+        width: 100%;
+        font-size: 20px;
+    }
+}
+
+
+
