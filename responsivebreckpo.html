@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/rosponsivebreckpo.css">
+
+</head>
+
+<body>
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/amzon1_.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/amzon2_.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/amzon3_.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/amzon4_.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/amzon5_.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/amzon6.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/amzon7_.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/amzon8_.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/amzon9_.jpg" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="prev">
+            <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="next">
+            <i class="fa-solid fa-chevron-right"></i>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+                renderBullet: function (index, className) {
+                    return `<span class="dot swiper-pagination-bullet dd">${index}</span>`;
+                },
+            },
+            // Navigation arrows
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            },
+            breakpoints: {
+                480: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                640: {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                768: {
+                    slidesPerView: 4,
+                    spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 5,
+                    spaceBetween: 50,
+                },
+            },
+        });
+    </script>
+</body>
+
+</html>
