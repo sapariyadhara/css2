@@ -1,0 +1,14 @@
+.box{
+    width: 200px;
+    height: 200px;
+    margin: 200px auto;
+    background-color: aqua;
+    font-size: 20px;
+    text-align: center;
+}
+h1{
+    margin: 200px auto;
+    color: rgb(37, 82, 82);
+    font-size: 40px;
+    text-align: center;
+}
