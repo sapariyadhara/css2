@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.containor{
+    max-width: 100%;
+   
+    
+    /* border: 1px solid coral; */
+    background-color: #e7e6e4
+}
+.topbar{
+    max-width: 79%;
+    /* border: 1px solid coral; */
+    margin: 0 auto;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.link ul{
+    display: flex;
+    align-items: center;
+
+}
+.link ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+.link ul li a{
+   color: #777;
+   padding-left: 17px;
+   font-size: 12px;
+   font-family: 'Inter', sans-serif;
+   font-weight: 400;
+}
+.link ul li a:hover{
+    color:orangered;
+}
+.data ul li{
+    list-style-type: none;
+    display: inline-block;
+}
+.data ul li {
+    color: #777;
+    padding-right: 15px;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    position: relative;
+    inset: 0;
+}
+.data > ul li::after{
+    content: '';
+    background-color: #777;
+    width: 0.5px;
+    height:12px;
+    margin-left: 10px;
+    position: absolute;
+    border: none;
+    bottom: 2px;
+
+}
+.data ul li:last-child::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    /* background-color: #e7e6e4 ; */
+    /* background:url(../img/arrow.png) ; */
+    
+} 
+.data ul li a{
+    color: #777;
+    text-decoration: none;
+}
+.data ul li a i{
+    margin-left: 2px;
+}
+.data ul li:hover{
+    color: orangered;
+}
+.data ul li a:hover{
+    color: orangered;
+}
+
+
+.data ul li{
+    position: relative;
+}
+.data ul li ul{
+    position: absolute;
+    background-color:#fff;
+    box-shadow: 2px 2px 10px gray;
+    top: 21px;
+    left: -11px;
+    font-size: 12px;
+    /* display: none; */
+}
+.data ul li ul li{
+    padding: 10px 20px;
+    width: 163px;
+    height: 42px;
+    
+}
+.data ul li ul li::after{
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    /* background-color: #e7e6e4 ; */
+    /* background:url(../img/arrow.png) ; */
+    
+}
+/* .my-acdata{
+    display: none;
+} */
