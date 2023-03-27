@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin: 20px 100px;
+        }
+
+        .form-data {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-data input {
+            margin: 10px 0 10px 0;
+            padding: 10px 5px;
+        }
+
+        #pswmsg {
+            display: none;
+            background: #f1f1f1;
+            color: #000;
+            position: relative;
+            padding: 20px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="text-center">
+        FORM VALIDATION USING JQUERY
+    </p>
+    <div class="container">
+        <form action="" method="post" class="form-data">
+            <label for="username">User Name</label>
+            <input type="text" id="fname" placeholder="Plaese enter your name">
+            <span id="nameErr">Please enter valid name</span>
+
+
+            <label for="age">Age</label>
+            <input type="text" id="age" placeholder="Plaese enter your age">
+            <span>Must be number</span>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Plaese enter your password">
+            <span id="pswmsg" class="invalid">Must be eight digit long</span>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+
+    <script>
+        var password = document.getElementById("password");
+        password.onkeyup = function () {
+            document.getElementById("pswmsg").style.display = "block";
+
+        }
+        password.onblur = function () {
+            document.getElementById("pswmsg").style.display = "none";
+        }
+        password.onkeyup = function () {
+            console.log('in last par',password.value.length)
+            if (password.value.length >= 8) {
+                console.log('in last par if')
+                pswmsg.classList.remove("invalid");
+                pswmsg.classList.add("valid");
+            } else {
+                console.log('in last par else')
+                pswmsg.classList.remove("valid");
+                pswmsg.classList.add("invalid");
+            }
+        }
+
+    </script>
+</body>
+
+</html>
