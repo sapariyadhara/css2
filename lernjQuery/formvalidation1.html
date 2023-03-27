@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: #f1f1f1;
+            padding: 20px;
+            margin: 20px 100px;
+        }
+
+        .register {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .register input {
+            margin: 10px 0 10px 0;
+            padding: 10px 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <form action="" method="post" class="register">
+            <label for="username">User Name</label>
+            <input type="text" id="fname" placeholder="Plaese enter your name">
+            <span id="fname-error"></span>
+            <br><br>
+
+            <label for="age">Age</label>
+            <input type="text" id="age" placeholder="Plaese enter your age">
+            <span id="age-error"></span>
+            <br><br>
+
+            <label for="password">Password</label>
+            <input type="password" id="pass" placeholder="Plaese enter your password">
+            <span id="pass-error"></span>
+            <br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function () {
+
+
+            $(".register").submit(function () {
+                var fnamedata = $("#fname").val();
+                var agedata = $("#age").val();
+                var passdata = $("#pass").val();
+                
+                var regfname = /^[a-zA-Z ]{2,30}$/;
+                // console.log(regfname.test(fnamedata));
+                console.log(isNaN(agedata));
+                if(fnamedata === ""){
+                    $("#fname-error").html("please enter your name")
+                } else if(!regfname.test(fnamedata)){
+                    $("#fname-error").html("please enter your valid name")
+                } else {
+                    $("#fname-error").html("")
+                }
+
+                if(agedata === ""){
+                    $("#age-error").html("please enter your age")
+                } else if (isNaN(agedata)){
+                    $("#age-error").html("please enter your valid age")
+                } else{
+                    $("#age-error").html("")
+                }
+
+                if(passdata === ""){
+                    $("#pass-error").html("please enter password")
+                }else if (!passdata < 8){
+                    $("#pass-error").html("Must be eight digit long")
+                } else{
+                    $("#pass-error").html("")
+                }
+
+                return false
+            })
+        });
+    </script>
+</body>
+
+</html>
