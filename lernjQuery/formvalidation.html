@@ -23,13 +23,8 @@
             padding: 10px 5px;
         }
 
-        #pswmsg {
-            display: none;
-            background: #f1f1f1;
-            color: #000;
-            position: relative;
-            padding: 20px;
-            margin-top: 10px;
+        span {
+            color: brown;
         }
     </style>
 </head>
@@ -42,16 +37,18 @@
         <form action="" method="post" class="form-data">
             <label for="username">User Name</label>
             <input type="text" id="fname" placeholder="Plaese enter your name">
-            <span id="nameErr">Please enter valid name</span>
-
+            <span id="nameErr"></span>
+            <br><br>
 
             <label for="age">Age</label>
             <input type="text" id="age" placeholder="Plaese enter your age">
-            <span>Must be number</span>
+            <span id="ageErr"></span>
+            <br><br>
 
             <label for="password">Password</label>
-            <input type="password" id="password" placeholder="Plaese enter your password">
-            <span id="pswmsg" class="invalid">Must be eight digit long</span>
+            <input type="password" id="pass" placeholder="Plaese enter your password">
+            <span id="passErr"></span>
+            <br><br>
 
             <input type="submit" value="Submit">
         </form>
@@ -63,26 +60,42 @@
 
 
     <script>
-        var password = document.getElementById("password");
-        password.onkeyup = function () {
-            document.getElementById("pswmsg").style.display = "block";
+        $(document).ready(function () {
+            $(".form-data").submit(function () {
+                var fnamedata = $("#fname").val();
+                var agedata = $("#age").val();
+                var passdata = $("#pass").val();
 
-        }
-        password.onblur = function () {
-            document.getElementById("pswmsg").style.display = "none";
-        }
-        password.onkeyup = function () {
-            console.log('in last par',password.value.length)
-            if (password.value.length >= 8) {
-                console.log('in last par if')
-                pswmsg.classList.remove("invalid");
-                pswmsg.classList.add("valid");
-            } else {
-                console.log('in last par else')
-                pswmsg.classList.remove("valid");
-                pswmsg.classList.add("invalid");
-            }
-        }
+                var regfname =  /^[a-zA-Z ]{2,30}$/;
+                // console.log(!regfname.test(fnamedata));
+                // console.log(isNaN(agedata));
+                // console.log([passdata.length,isNaN(agedata)]);
+                if (fnamedata === "") {
+                    $("#nameErr").html("Please enter your name")
+                } else if(!regfname.test(fnamedata)){
+                    $("#nameErr").html("Please enter your valid name")
+                } else{
+                    $("#nameErr").html("")
+                }
+
+                if (agedata === "") {
+                    $("#ageErr").html("Please enter your age")
+                } else if(isNaN(agedata)){
+                    $("#ageErr").html("Please enter your valid age")
+                } else{
+                    $("#ageErr").html("")
+                }
+
+                if (passdata === "") {
+                    $("#passErr").html("Please enter password")
+                } else if(passdata.length < 8 ){
+                    $("#passErr").html("Please enter password must be eight digit")
+                } else{
+                    $("#passErr").html("")
+                }
+                return false
+            });
+        });
 
     </script>
 </body>
