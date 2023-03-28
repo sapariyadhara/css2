@@ -10,7 +10,7 @@
         .container {
             background-color: #f1f1f1;
             padding: 20px;
-            margin: 20px 100px;
+            margin: 20px 300px;
         }
 
         .register {
@@ -21,6 +21,9 @@
         .register input {
             margin: 10px 0 10px 0;
             padding: 10px 5px;
+        }
+        span {
+            color: brown;
         }
     </style>
 </head>
@@ -44,6 +47,8 @@
             <span id="pass-error"></span>
             <br><br>
 
+            
+
             <input type="submit" value="Submit">
         </form>
     </div>
@@ -62,7 +67,7 @@
                 
                 var regfname = /^[a-zA-Z ]{2,30}$/;
                 // console.log(regfname.test(fnamedata));
-                console.log(isNaN(agedata));
+                // console.log(isNaN(agedata));
                 if(fnamedata === ""){
                     $("#fname-error").html("please enter your name")
                 } else if(!regfname.test(fnamedata)){
@@ -81,8 +86,8 @@
 
                 if(passdata === ""){
                     $("#pass-error").html("please enter password")
-                }else if (!passdata < 8){
-                    $("#pass-error").html("Must be eight digit long")
+                }else if (passdata.length < 8){
+                    $("#pass-error").html("Password Must be eight digit long")
                 } else{
                     $("#pass-error").html("")
                 }
