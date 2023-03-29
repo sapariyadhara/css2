@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            text-align: center;
+            margin-top: 40vh;
+        }
+
+        .counter {
+            font-family: 'Rampart One', cursive;
+            font-size: 5em;
+            /* margin: 100vh auto 40vh; */
+        }
+
+        .counter:not(.is-visible) {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <div class="counter-1">
+        14124355613
+    </div>
+    <div class="space">Scroll down to see the counter</div>
+    <div class="counter">1,123,456.78</div>
+    <script src="https://unpkg.com/counterup2@2.0.2/dist/index.js">	</script>
+
+    <script>
+        const counterUp = window.counterUp.default
+
+        const callback = entries => {
+            entries.forEach(entry => {
+                const el = entry.target
+                if (entry.isIntersecting && !el.classList.contains('is-visible')) {
+                    counterUp(el, {
+                        duration: 2000,
+                        delay: 16,
+                    })
+                    el.classList.add('is-visible')
+                }
+            })
+        }
+
+        const IO = new IntersectionObserver(callback, { threshold: 1 })
+
+        const el = document.querySelector('.counter')
+        IO.observe(el)
+
+        const el1 = document.querySelector('.counter-1')
+        IO.observe(el1)
+    </script>
+
+</body>
+
+</html>

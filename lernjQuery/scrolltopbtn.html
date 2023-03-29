@@ -466,14 +466,13 @@
                     $("#btn").removeClass("show")
                 }
                 var toTop = $("#btn").val();
-            // logic
-            $("#btn").on('click', function () {
-                $('html, body').animate({
-                    scrollTop: $('html, body').offset().top,
+           });
+
+           $("#btn").click(function(){
+                $("html , body").animate({
+                    scrollTop: 0 ,
                 });
             });
-            });
-           
         });
        
     </script>
