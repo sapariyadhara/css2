@@ -47,6 +47,11 @@
             <span id="pass-error"></span>
             <br><br>
 
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Plaese enter your email">
+            <span id="email-error"></span>
+            <br><br>
+
             
 
             <input type="submit" value="Submit">
@@ -64,8 +69,13 @@
                 var fnamedata = $("#fname").val();
                 var agedata = $("#age").val();
                 var passdata = $("#pass").val();
+                var emaildata = $("#email").val();
                 
                 var regfname = /^[a-zA-Z ]{2,30}$/;
+
+                var userinput = $(this).val();
+                var regemail = /^\b[A-Z0-9._%-]+@[A-Z0-9.-]+\.[A-Z]{2,4}\b$/i
+                console.log(regemail.test(userinput));
                 // console.log(regfname.test(fnamedata));
                 // console.log(isNaN(agedata));
                 if(fnamedata === ""){
@@ -92,6 +102,11 @@
                     $("#pass-error").html("")
                 }
 
+                if(emaildata === "" ){
+                    $("#email-error").html("please enter email address")
+                } else {
+                    $("#email-error").html("")
+                }
                 return false
             })
         });

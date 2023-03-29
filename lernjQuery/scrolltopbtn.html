@@ -20,13 +20,14 @@
             font-size: 20px;
             border: 2px solid black;
             border-radius: 10px;
-          
+
         }
 
         #btn:hover {
             background-color: #555;
         }
-        .show{
+
+        .show {
             display: block !important;
         }
     </style>
@@ -34,7 +35,7 @@
 
 <body>
     <h1>Scroll button</h1>
-    <button  id="btn">top</button>
+    <button id="btn">top</button>
     <div>
         <p>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quod aperiam nihil, error, sint, commodi
@@ -456,17 +457,25 @@
         //     });
         // });
 
-        $(document).ready(function(){
-            $(window).on("scroll",function(){
-                console.log($(window).scrollTop());
-                if(($(window).scrollTop() > 200)){
+        $(document).ready(function () {
+            $(window).on("scroll", function () {
+                // console.log($(window).scrollTop());
+                if (($(window).scrollTop() > 200)) {
                     $("#btn").addClass("show")
-                } else{
+                } else {
                     $("#btn").removeClass("show")
                 }
+                var toTop = $("#btn").val();
+            // logic
+            $("#btn").on('click', function () {
+                $('html, body').animate({
+                    scrollTop: $('html, body').offset().top,
+                });
             });
-
+            });
+           
         });
+       
     </script>
 </body>
 
