@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css" />
+
+    <style>
+        body {
+            background-color: #000;
+        }
+
+        .container {
+            columns: 300px 4;
+
+        }
+
+        .fancybox img {
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="fancybox">
+            <a href="https://assets.codepen.io/12005/windmill.jpg" data-fancybox="gallery">
+                <img src="https://assets.codepen.io/12005/windmill.jpg" alt="">
+            </a>
+        </div>
+        <div class="fancybox">
+            <a href="https://assets.codepen.io/12005/suspension-bridge.jpg" data-fancybox="gallery">
+                <img src="https://assets.codepen.io/12005/suspension-bridge.jpg" alt="">
+            </a>
+        </div>
+        <div class="fancybox">
+            <a href="https://assets.codepen.io/12005/sunset.jpg" data-fancybox="gallery">
+                <img src="https://assets.codepen.io/12005/sunset.jpg" alt="">
+            </a>
+        </div>
+        <div class="fancybox">
+            <a href="https://assets.codepen.io/12005/snowy.jpg" data-fancybox="gallery">
+                <img src="https://assets.codepen.io/12005/snowy.jpg" alt="">
+            </a>
+        </div>
+        <div class="fancybox">
+            <a href="https://assets.codepen.io/12005/bristol-balloons1.jpg" data-fancybox="gallery">
+                <img src="https://assets.codepen.io/12005/bristol-balloons1.jpg" alt="">
+            </a>
+        </div>
+        <div class="fancybox">
+            <a href="https://assets.codepen.io/12005/dog-balloon.jpg" data-fancybox="gallery">
+                <img src="https://assets.codepen.io/12005/dog-balloon.jpg" alt="">
+            </a>
+        </div>
+        <div class="fancybox">
+            <a href="https://assets.codepen.io/12005/abq-balloons.jpg" data-fancybox="gallery">
+                <img src="https://assets.codepen.io/12005/abq-balloons.jpg" alt="">
+            </a>
+        </div>
+        <div class="fancybox">
+            <a href="https://assets.codepen.io/12005/disney-balloon.jpg" data-fancybox="gallery">
+                <img src="https://assets.codepen.io/12005/disney-balloon.jpg" alt="">
+            </a>
+        </div>
+        <div class="fancybox">
+            <a href="https://assets.codepen.io/12005/bristol-harbor.jpg" data-fancybox="gallery">
+                <img src="https://assets.codepen.io/12005/bristol-harbor.jpg" alt="">
+            </a>
+        </div>
+        <div class="fancybox">
+            <a href="https://assets.codepen.io/12005/bristol-balloons2.jpg" data-fancybox="gallery">
+                <img src="https://assets.codepen.io/12005/bristol-balloons2.jpg" alt="">
+            </a>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+
+    <script>
+        Fancybox.bind('[data-fancybox="gallery"]', {
+            // Your custom options
+        });
+    </script>
+</body>
+
+</html>
