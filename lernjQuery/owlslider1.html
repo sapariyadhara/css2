@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -14,29 +15,49 @@
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .owl-carousel img {
+            width: 300px;
+            height: 300px;
+        }
 
-        <style>
-            .owl-carousel img{
-                width: 300px;
-                height: 300px;
-            }
-            .owl-carousel{
-                position: relative;
-            }
-            
-            .owl-theme .owl-nav {
-                content: "";
-                position: absolute;
-                top: 0;
-            }
-            .owl-theme .owl-nav .owl-next{
-               right: 0;
-            }
-            .owl-carousel .owl-nav button .owl-prev{
-                left: 0;
-            }
+        .owl-carousel {
+            position: relative;
+        }
 
-        </style>
+       
+
+        .owl-carousel .owl-nav button.owl-next,
+        .owl-carousel .owl-nav button.owl-prev {
+            position: absolute;
+            top: 40%;
+        }
+
+       
+        .owl-carousel .owl-nav button.owl-next {
+            position: absolute;
+            top: 40%;
+            width: 30px;
+            height: 30px;
+            color: black;
+            border-radius: 50%;
+            background-color: aliceblue;
+            right: 30px;
+        }
+        .owl-carousel .owl-nav button.owl-prev {
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            top: 40%;
+            color: black;
+            border-radius: 50%;
+            background-color: aliceblue;
+            left: 10px;
+        }
+    </style>
 </head>
 
 <body>
@@ -78,9 +99,12 @@
         <div class="item">
             <img src="./images/img2.jpg" alt="">
         </div>
-        <div class='owl-prev'>
-            <i class="fa-solid fa-chevron-right"></i>
+        <div class="item">
+            <img src="./images/img2.jpg" alt="">
         </div>
+        <!-- <div class='owl-prev'>
+            <i class="fa-solid fa-chevron-right"></i>
+        </div> -->
     </div>
 
 
@@ -98,7 +122,7 @@
                 loop: true,
                 margin: 10,
                 nav: true,
-                navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
+                navText: ['<i class="fa-solid fa-chevron-left"></i>',' <i class="fa-solid fa-chevron-right"></i>'],
 
                 responsive: {
                     0: {
