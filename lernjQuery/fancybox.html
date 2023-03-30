@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <style>
+        * {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+body {
+  background: #fff;
+  font-family: Trebuchet Ms;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.container {
+  width: 80%;
+  column-count: 4;
+  margin: 0 auto;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  margin: 1em;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    column-count: 3;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .container {
+    column-count: 2;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Responsive Image Gallery</h1>
+        <p>We are building an image gallery with CSS grid and jquery FancyBox plugin</p>
+      </header>
+    
+      <div class="container">
+        <div class="grid-item">
+          <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1479064312651-24524fb55c0e?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTQwNQ&ixlib=rb-1.2.1&q=85"><img src="https://images.unsplash.com/photo-1479064312651-24524fb55c0e?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTQwNQ&ixlib=rb-1.2.1&q=85"></a>
+        </div>
+        <div class="grid-item">
+          <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1527698334848-f475f9d99449?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTQwNQ&ixlib=rb-1.2.1&q=85"><img src="https://images.unsplash.com/photo-1527698334848-f475f9d99449?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTQwNQ&ixlib=rb-1.2.1&q=85"></a>
+        </div>
+        <div class="grid-item">
+          <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1466781783364-36c955e42a7f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTQwNQ&ixlib=rb-1.2.1&q=85"><img src="https://images.unsplash.com/photo-1466781783364-36c955e42a7f?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTQwNQ&ixlib=rb-1.2.1&q=85"></a>
+        </div>
+        <div class="grid-item">
+          <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1508968419-73cca394e8aa?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTQwNQ&ixlib=rb-1.2.1&q=85"><img src="https://images.unsplash.com/photo-1508968419-73cca394e8aa?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTQwNQ&ixlib=rb-1.2.1&q=85"></a>
+        </div>
+        <div class="grid-item">
+          <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1564951434112-64d74cc2a2d7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTQwNQ&ixlib=rb-1.2.1&q=85"><img src="https://images.unsplash.com/photo-1564951434112-64d74cc2a2d7?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTQwNQ&ixlib=rb-1.2.1&q=85"></a>
+        </div>
+        <div class="grid-item">
+          <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTQwNQ&ixlib=rb-1.2.1&q=85"><img src="https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTQwNQ&ixlib=rb-1.2.1&q=85"></a>
+        </div>
+        <div class="grid-item">
+          <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1627626167513-e0bed2b4cff3?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTU2NQ&ixlib=rb-1.2.1&q=85"><img src="https://images.unsplash.com/photo-1627626167513-e0bed2b4cff3?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTU2NQ&ixlib=rb-1.2.1&q=85"></a>
+        </div>
+        <div class="grid-item">
+          <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1628230704059-be5735f707d1?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTU2NQ&ixlib=rb-1.2.1&q=85"><img src="https://images.unsplash.com/photo-1628230704059-be5735f707d1?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTU2NQ&ixlib=rb-1.2.1&q=85"></a>
+        </div>
+        <div class="grid-item">
+          <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1629019638491-c89d444bacaf?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTU2NQ&ixlib=rb-1.2.1&q=85"><img src="https://images.unsplash.com/photo-1629019638491-c89d444bacaf?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTU2NQ&ixlib=rb-1.2.1&q=85"></a>
+        </div>
+        <div class="grid-item">
+          <a data-fancybox="gallery" href="https://images.unsplash.com/photo-1629463581326-72547415bcaf?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTU2NQ&ixlib=rb-1.2.1&q=85"><img src="https://images.unsplash.com/photo-1629463581326-72547415bcaf?crop=entropy&cs=srgb&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyOTU3MTU2NQ&ixlib=rb-1.2.1&q=85"></a>
+        </div>
+      </div>
+    
+      <script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+</html>
